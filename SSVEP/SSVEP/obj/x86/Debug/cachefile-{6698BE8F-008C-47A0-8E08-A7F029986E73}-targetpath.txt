@@ -1,0 +1,6 @@
+Content\solidHB.xnb
+Content\solidHW.xnb
+Content\solidVB.xnb
+Content\solidVW.xnb
+Content\B1.xnb
+Content\W1.xnb
