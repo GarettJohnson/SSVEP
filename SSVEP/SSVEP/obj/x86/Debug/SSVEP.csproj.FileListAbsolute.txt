@@ -18,3 +18,16 @@ C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEP\obj\x86\Debug\SSVEP.exe
 C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEP\obj\x86\Debug\SSVEP.pdb
 C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEP\bin\x86\Debug\Content\B1.xnb
 C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEP\bin\x86\Debug\Content\W1.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\Content\solidHB.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\Content\solidHW.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\Content\solidVB.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\Content\solidVW.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\Content\B1.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\Content\W1.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\SSVEP.exe
+C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\SSVEP.pdb
+C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\MjpegProcessorXna4.dll
+C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\obj\x86\Debug\SSVEP.csprojResolveAssemblyReference.cache
+C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\obj\x86\Debug\SSVEP.exe
+C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\obj\x86\Debug\SSVEP.pdb

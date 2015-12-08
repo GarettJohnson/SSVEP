@@ -1,0 +1,14 @@
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\obj\x86\Release\MSeq.csprojResolveAssemblyReference.cache
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\MSeq.exe
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\MSeq.pdb
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\obj\x86\Release\MSeq.exe
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\obj\x86\Release\MSeq.pdb
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\B1.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidHB.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidHW.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidVB.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidVW.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\W1.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidHG.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidVG.xnb

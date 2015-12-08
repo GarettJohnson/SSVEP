@@ -1,2 +1,3 @@
 C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEP\SSVEPContent\obj\x86\Release\SSVEPContent.contentprojResolveAssemblyReference.cache
 C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEPContent\obj\x86\Release\SSVEPContent.contentprojResolveAssemblyReference.cache
+C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEPContent\obj\x86\Release\SSVEPContent.contentprojResolveAssemblyReference.cache

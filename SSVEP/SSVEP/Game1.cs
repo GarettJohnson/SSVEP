@@ -83,14 +83,14 @@ namespace SSVEP
             
             // fuck it, let's not try and fit it to screen resolution
             // hard code this shit to 800 x 600
-            //this.SCREENHEIGHT = 600;
-            //this.SCREENWIDTH = 800;
+            this.SCREENHEIGHT = 600;
+            this.SCREENWIDTH = 800;
             //graphics.PreferredBackBufferHeight = this.SCREENHEIGHT;
             //graphics.PreferredBackBufferWidth = this.SCREENWIDTH;
 
             // or make this shit take up the whole screen????
-            this.SCREENHEIGHT = System.Windows.Forms.SystemInformation.PrimaryMonitorSize.Height;
-            this.SCREENWIDTH = System.Windows.Forms.SystemInformation.PrimaryMonitorSize.Width;
+            //this.SCREENHEIGHT = System.Windows.Forms.SystemInformation.PrimaryMonitorSize.Height;
+            //this.SCREENWIDTH = System.Windows.Forms.SystemInformation.PrimaryMonitorSize.Width;
             graphics.PreferredBackBufferHeight = this.SCREENHEIGHT;
             graphics.PreferredBackBufferWidth = this.SCREENWIDTH;
             
@@ -104,8 +104,8 @@ namespace SSVEP
             form.WindowState = System.Windows.Forms.FormWindowState.Normal;
             form.TopMost = true;
             // window border, or no?
-            //form.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;   
-            form.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            form.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;   
+            //form.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
                         
             base.Initialize();
         }
@@ -220,15 +220,15 @@ namespace SSVEP
             }
 
             ////Update the 6.66 Hz stimulus <---------( period of 60/9, 4 on 5 off )
-            if (Cntr4 == 4 && State4 == 1)
+            if (Cntr4 == 1 && State4 == 1)
             {
                 StimType4 = 1; Cntr4 = 0; State4 = 0;
             }
-            else if (Cntr4 == 5 && State4 == 0)
+            else if (Cntr4 == 1 && State4 == 0)
             {
                 StimType4 = 2; Cntr4 = 0; State4 = 1;
             }
-          
+                      
             base.Update(gameTime);
         }
 

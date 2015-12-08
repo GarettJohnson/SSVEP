@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEP\bin\x86\Debug\Content\solidHB.xnb</Output>
+      <Output>C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\Content\solidHB.xnb</Output>
       <Time>2015-10-04T10:39:49.2437218-04:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEP\bin\x86\Debug\Content\solidHW.xnb</Output>
+      <Output>C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\Content\solidHW.xnb</Output>
       <Time>2015-10-04T10:40:02.7104921-04:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEP\bin\x86\Debug\Content\solidVB.xnb</Output>
+      <Output>C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\Content\solidVB.xnb</Output>
       <Time>2015-10-04T10:40:17.8763595-04:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEP\bin\x86\Debug\Content\solidVW.xnb</Output>
+      <Output>C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\Content\solidVW.xnb</Output>
       <Time>2015-10-04T10:40:30.700093-04:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEP\bin\x86\Debug\Content\B1.xnb</Output>
+      <Output>C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\Content\B1.xnb</Output>
       <Time>2015-10-04T13:46:52.7516698-04:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEP\bin\x86\Debug\Content\W1.xnb</Output>
+      <Output>C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\Content\W1.xnb</Output>
       <Time>2015-10-04T13:46:52.75567-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -62,10 +62,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEPContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEP\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEP\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Johnson\Desktop\SSVEP Software\SSVEP\SSVEP\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEPContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
