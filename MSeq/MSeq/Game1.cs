@@ -80,7 +80,7 @@ namespace MSeq
             Cntr1 = (Math.Round(0.0*mSequence.Length / 4.0));
             Cntr2 = (Math.Round(1.0*mSequence.Length / 4.0));
             Cntr3 = (Math.Round(2.0*mSequence.Length / 4.0));
-            Cntr3 = (Math.Round(3.0*mSequence.Length / 4.0));
+            Cntr4 = (Math.Round(3.0*mSequence.Length / 4.0));
 
 
             System.Diagnostics.Process.GetCurrentProcess().PriorityClass = System.Diagnostics.ProcessPriorityClass.RealTime;
@@ -199,7 +199,7 @@ namespace MSeq
 
             // Update the counters, these count frames
             Cntr1++; Cntr2++; Cntr3++; Cntr4++;
-
+            //Cntr1+=0.2; Cntr2+=0.2; Cntr3+=0.2; Cntr4+=0.2;
             // Roll over the sequence?
             if (Cntr1 >= mSequence.Length)
             {
@@ -226,7 +226,7 @@ namespace MSeq
         protected override void Draw(GameTime gameTime)
         {
             // Let's Draw this on a semi-transparent window, just for fucks.
-            GraphicsDevice.Clear(new Color(0, 0, 0, 1.0f));
+            GraphicsDevice.Clear(new Color(0, 0, 0, 0.1f));
 
             spriteBatch.Begin();
             //Top stimulus
