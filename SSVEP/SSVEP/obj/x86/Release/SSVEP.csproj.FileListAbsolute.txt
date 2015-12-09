@@ -28,7 +28,6 @@ C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Release\Content\B1.x
 C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Release\Content\W1.xnb
 C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Release\SSVEP.exe
 C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\bin\x86\Release\SSVEP.pdb
-C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\obj\x86\Release\SSVEP.csprojResolveAssemblyReference.cache
 C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\obj\x86\Release\SSVEP.exe
 C:\Users\Johnson\Documents\GitHub\SSVEP\SSVEP\SSVEP\obj\x86\Release\SSVEP.pdb

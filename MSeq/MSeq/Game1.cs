@@ -33,7 +33,7 @@ namespace MSeq
         Texture2D Horiz1, Horiz2, Horiz3, Vert1, Vert2, Vert3;
         Color StimulusColor = Color.White;
         //float stimScale = 0.32f;
-        float stimScale = 1.0f;
+        float stimScale = 1.5f;
         public Game game;
         public ContentManager content;
         public SpriteBatch spriteBatch;
@@ -101,12 +101,12 @@ namespace MSeq
 
             // fuck it, let's not try and fit it to screen resolution
             // hard code this shit to 800 x 600
-            this.SCREENHEIGHT = 600;
-            this.SCREENWIDTH = 800;
+            //this.SCREENHEIGHT = 600;
+            //this.SCREENWIDTH = 800;
 
             // or make this shit take up the whole screen????
-            //this.SCREENHEIGHT = System.Windows.Forms.SystemInformation.PrimaryMonitorSize.Height;
-            //this.SCREENWIDTH = System.Windows.Forms.SystemInformation.PrimaryMonitorSize.Width;
+            this.SCREENHEIGHT = System.Windows.Forms.SystemInformation.PrimaryMonitorSize.Height;
+            this.SCREENWIDTH = System.Windows.Forms.SystemInformation.PrimaryMonitorSize.Width;
             graphics.PreferredBackBufferHeight = this.SCREENHEIGHT;
             graphics.PreferredBackBufferWidth = this.SCREENWIDTH;
 
@@ -135,13 +135,19 @@ namespace MSeq
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // for the big shit
-            Horiz1 = this.Content.Load<Texture2D>("solidHW");
-            Horiz2 = this.Content.Load<Texture2D>("solidHG");
-            Horiz3 = this.Content.Load<Texture2D>("solidHB");
-
-            Vert1 = this.Content.Load<Texture2D>("solidVW");
-            Vert2 = this.Content.Load<Texture2D>("solidVG");
-            Vert3 = this.Content.Load<Texture2D>("solidVB");
+            //Horiz1 = this.Content.Load<Texture2D>("solidHW");
+            //Horiz2 = this.Content.Load<Texture2D>("solidHG");
+            //Horiz3 = this.Content.Load<Texture2D>("solidHB");
+            Horiz1 = this.Content.Load<Texture2D>("solidHRed");
+            Horiz2 = this.Content.Load<Texture2D>("solidHGreen");
+            Horiz3 = this.Content.Load<Texture2D>("solidHBlue");
+            
+            //Vert1 = this.Content.Load<Texture2D>("solidVW");
+            //Vert2 = this.Content.Load<Texture2D>("solidVG");
+            //Vert3 = this.Content.Load<Texture2D>("solidVB");
+            Vert1 = this.Content.Load<Texture2D>("solidVRed");
+            Vert2 = this.Content.Load<Texture2D>("solidVGreen");
+            Vert3 = this.Content.Load<Texture2D>("solidVBlue");
 
             // for the big shit
             // top stimulus is located center top
@@ -187,33 +193,33 @@ namespace MSeq
                 this.Exit();
             
             //Do we need to flip the stimuli?? (check cntr variables: possibly flip states and reset cntr variables)
-            StimType1 = mSequence[Convert.ToInt32(Cntr1)];
-            StimType2 = mSequence[Convert.ToInt32(Cntr2)];
-            StimType3 = mSequence[Convert.ToInt32(Cntr3)];
-            StimType4 = mSequence[Convert.ToInt32(Cntr4)];
+            StimType1 = mSequence[Convert.ToInt32(Math.Floor(Cntr1))];
+            StimType2 = mSequence[Convert.ToInt32(Math.Floor(Cntr2))];
+            StimType3 = mSequence[Convert.ToInt32(Math.Floor(Cntr3))];
+            StimType4 = mSequence[Convert.ToInt32(Math.Floor(Cntr4))];
             
             // string to send
-            string toSend = "mSeqPosition1 " + Cntr1.ToString() + '\n';
+            string toSend = "mSeqPosition1 " + Math.Floor(Cntr1).ToString() + '\n';
             byte[] mState = Encoding.ASCII.GetBytes( toSend );
             mServ.Send( mState, mState.Length,ep );
 
             // Update the counters, these count frames
-            Cntr1++; Cntr2++; Cntr3++; Cntr4++;
-            //Cntr1+=0.2; Cntr2+=0.2; Cntr3+=0.2; Cntr4+=0.2;
+            //Cntr1++; Cntr2++; Cntr3++; Cntr4++;
+            Cntr1+=0.5; Cntr2+=0.5; Cntr3+=0.5; Cntr4+=0.5;
             // Roll over the sequence?
-            if (Cntr1 >= mSequence.Length)
+            if (Cntr1 > mSequence.Length-1)
             {
                 Cntr1 = 0;
             }
-            if (Cntr2 >= mSequence.Length)
+            if (Cntr2 > mSequence.Length-1)
             {
                 Cntr2 = 0;
             }
-            if (Cntr3 >= mSequence.Length)
+            if (Cntr3 > mSequence.Length-1)
             {
                 Cntr3 = 0;
             }
-            if (Cntr4 >= mSequence.Length)
+            if (Cntr4 > mSequence.Length-1)
             {
                 Cntr4 = 0;
             }
@@ -226,61 +232,61 @@ namespace MSeq
         protected override void Draw(GameTime gameTime)
         {
             // Let's Draw this on a semi-transparent window, just for fucks.
-            GraphicsDevice.Clear(new Color(0, 0, 0, 0.1f));
+            GraphicsDevice.Clear(new Color(0, 0, 0, 1.0f));
 
             spriteBatch.Begin();
             //Top stimulus
-            if (StimType1 == 1)
+            if (StimType1 == 0)
             {
                 spriteBatch.Draw(Horiz1, p1, null, Color.White, 0, Vector2.Zero, stimScale, SpriteEffects.None, 0);
             }
-            if (StimType1 == 2)
+            if (StimType1 == 1)
             {
                 spriteBatch.Draw(Horiz2, p1, null, Color.White, 0, Vector2.Zero, stimScale, SpriteEffects.None, 0);
             }
-            if (StimType1 == 3)
+            if (StimType1 == 2)
             {
                 spriteBatch.Draw(Horiz3, p1, null, Color.White, 0, Vector2.Zero, stimScale, SpriteEffects.None, 0);
             }
 
             //Bottom stimulus
-            if (StimType2 == 1)
+            if (StimType2 == 0)
             {
                 spriteBatch.Draw(Horiz1, p2, null, Color.White, 0, Vector2.Zero, stimScale, SpriteEffects.None, 0);
             }
-            if (StimType2 == 2)
+            if (StimType2 == 1)
             {
                 spriteBatch.Draw(Horiz2, p2, null, Color.White, 0, Vector2.Zero, stimScale, SpriteEffects.None, 0);
             }
-            if (StimType2 == 3)
+            if (StimType2 == 2)
             {
                 spriteBatch.Draw(Horiz3, p2, null, Color.White, 0, Vector2.Zero, stimScale, SpriteEffects.None, 0);
             }
 
             //Right stimulus
-            if (StimType3 == 1)
+            if (StimType3 == 0)
             {
                 spriteBatch.Draw(Vert1, p3, null, Color.White, 0, Vector2.Zero, stimScale, SpriteEffects.None, 0);
             }
-            if (StimType3 == 2)
+            if (StimType3 == 1)
             {
                 spriteBatch.Draw(Vert2, p3, null, Color.White, 0, Vector2.Zero, stimScale, SpriteEffects.None, 0);
             }
-            if (StimType3 == 3)
+            if (StimType3 == 2)
             {
                 spriteBatch.Draw(Vert3, p3, null, Color.White, 0, Vector2.Zero, stimScale, SpriteEffects.None, 0);
             }
 
             //Left Stimulus
-            if (StimType4 == 1)
+            if (StimType4 == 0)
             {
                 spriteBatch.Draw(Vert1, p4, null, Color.White, 0, Vector2.Zero, stimScale, SpriteEffects.None, 0);
             }
-            if (StimType4 == 2)
+            if (StimType4 == 1)
             {
                 spriteBatch.Draw(Vert2, p4, null, Color.White, 0, Vector2.Zero, stimScale, SpriteEffects.None, 0);
             }
-            if (StimType4 == 3)
+            if (StimType4 == 2)
             {
                 spriteBatch.Draw(Vert3, p4, null, Color.White, 0, Vector2.Zero, stimScale, SpriteEffects.None, 0);
             }

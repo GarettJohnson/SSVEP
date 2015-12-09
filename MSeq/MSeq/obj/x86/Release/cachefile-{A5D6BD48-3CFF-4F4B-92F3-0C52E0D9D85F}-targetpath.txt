@@ -6,3 +6,9 @@ Content\solidVW.xnb
 Content\W1.xnb
 Content\solidHG.xnb
 Content\solidVG.xnb
+Content\solidHBlue.xnb
+Content\solidHGreen.xnb
+Content\solidHRed.xnb
+Content\solidVBlue.xnb
+Content\solidVGreen.xnb
+Content\solidVRed.xnb

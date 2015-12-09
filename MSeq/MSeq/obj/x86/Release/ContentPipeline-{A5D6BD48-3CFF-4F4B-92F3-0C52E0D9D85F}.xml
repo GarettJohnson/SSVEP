@@ -73,6 +73,60 @@
       <Output>C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidVG.xnb</Output>
       <Time>2015-12-07T16:16:56.9477502-05:00</Time>
     </Item>
+    <Item>
+      <Source>solidHBlue.jpg</Source>
+      <Name>solidHBlue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidHBlue.xnb</Output>
+      <Time>2015-12-08T19:36:27.3022126-05:00</Time>
+    </Item>
+    <Item>
+      <Source>solidHGreen.jpg</Source>
+      <Name>solidHGreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidHGreen.xnb</Output>
+      <Time>2015-12-08T19:37:01.0941454-05:00</Time>
+    </Item>
+    <Item>
+      <Source>solidHRed.jpg</Source>
+      <Name>solidHRed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidHRed.xnb</Output>
+      <Time>2015-12-08T19:37:29.9417954-05:00</Time>
+    </Item>
+    <Item>
+      <Source>solidVBlue.jpg</Source>
+      <Name>solidVBlue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidVBlue.xnb</Output>
+      <Time>2015-12-08T19:38:34.4624858-05:00</Time>
+    </Item>
+    <Item>
+      <Source>solidVGreen.jpg</Source>
+      <Name>solidVGreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidVGreen.xnb</Output>
+      <Time>2015-12-08T19:38:47.7522459-05:00</Time>
+    </Item>
+    <Item>
+      <Source>solidVRed.jpg</Source>
+      <Name>solidVRed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidVRed.xnb</Output>
+      <Time>2015-12-08T19:39:00.1509551-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{A5D6BD48-3CFF-4F4B-92F3-0C52E0D9D85F}</ContentProjectGUID>
