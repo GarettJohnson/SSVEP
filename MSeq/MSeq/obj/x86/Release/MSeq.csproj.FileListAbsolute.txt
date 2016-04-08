@@ -17,3 +17,4 @@ C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidH
 C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidVBlue.xnb
 C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidVGreen.xnb
 C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\bin\x86\Release\Content\solidVRed.xnb
+C:\Users\Johnson\Documents\GitHub\SSVEP\MSeq\MSeq\obj\x86\Release\MSeq.csprojResolveAssemblyReference.cache

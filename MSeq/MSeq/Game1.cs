@@ -44,8 +44,10 @@ namespace MSeq
         int SCREENWIDTH, SCREENHEIGHT;        
         Vector2 p1, p2, p3, p4;
 
-        // used some function off the matlab website to generate this sequence
-        int[] mSequence = { 1, 1, 2, 1, 1, 0, 2, 1, 2, 2, 2, 0, 1, 1, 0, 0, 1, 2, 1, 0, 0, 2, 2, 1, 2, 1, 2, 0, 2, 0, 0, 2, 0, 1, 2, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 2, 0, 1, 0, 0, 0, 2, 1, 1, 2, 2, 1, 0, 1, 2, 2, 0, 0, 1, 0, 1, 0, 2, 0, 2, 2, 0, 2, 1, 0, 2, 2, 2, 2, 1 };
+        // used some function off the matlab website to generate this sequence        
+        int[] mSequence = { 1, 0, 1, 0, 2, 0, 0, 2, 1, 0, 0, 0, 1, 1, 2, 1, 2, 0, 2, 2, 0, 1, 2, 2, 2, 1 };
+        //int[] mSequence = { 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0 };
+
 
         UdpClient mServ = new UdpClient();
         // THIS IS THE PORT THAT WE USE TO LISTEN IN ON FOR BCI2000!!!!!!!!!!!!!!!!!!
@@ -136,6 +138,7 @@ namespace MSeq
 
             // for the big shit
             //Horiz1 = this.Content.Load<Texture2D>("solidHW");
+            //Horiz2 = this.Content.Load<Texture2D>("solidHB");
             //Horiz2 = this.Content.Load<Texture2D>("solidHG");
             //Horiz3 = this.Content.Load<Texture2D>("solidHB");
             Horiz1 = this.Content.Load<Texture2D>("solidHRed");
@@ -143,6 +146,7 @@ namespace MSeq
             Horiz3 = this.Content.Load<Texture2D>("solidHBlue");
             
             //Vert1 = this.Content.Load<Texture2D>("solidVW");
+            //Vert2 = this.Content.Load<Texture2D>("solidVB");
             //Vert2 = this.Content.Load<Texture2D>("solidVG");
             //Vert3 = this.Content.Load<Texture2D>("solidVB");
             Vert1 = this.Content.Load<Texture2D>("solidVRed");
@@ -196,16 +200,11 @@ namespace MSeq
             StimType1 = mSequence[Convert.ToInt32(Math.Floor(Cntr1))];
             StimType2 = mSequence[Convert.ToInt32(Math.Floor(Cntr2))];
             StimType3 = mSequence[Convert.ToInt32(Math.Floor(Cntr3))];
-            StimType4 = mSequence[Convert.ToInt32(Math.Floor(Cntr4))];
-            
-            // string to send
-            string toSend = "mSeqPosition1 " + Math.Floor(Cntr1).ToString() + '\n';
-            byte[] mState = Encoding.ASCII.GetBytes( toSend );
-            mServ.Send( mState, mState.Length,ep );
+            StimType4 = mSequence[Convert.ToInt32(Math.Floor(Cntr4))];                      
 
             // Update the counters, these count frames
-            //Cntr1++; Cntr2++; Cntr3++; Cntr4++;
-            Cntr1+=0.5; Cntr2+=0.5; Cntr3+=0.5; Cntr4+=0.5;
+            Cntr1++; Cntr2++; Cntr3++; Cntr4++;
+            //Cntr1+=0.5; Cntr2+=0.5; Cntr3+=0.5; Cntr4+=0.5;
             // Roll over the sequence?
             if (Cntr1 > mSequence.Length-1)
             {
@@ -233,6 +232,11 @@ namespace MSeq
         {
             // Let's Draw this on a semi-transparent window, just for fucks.
             GraphicsDevice.Clear(new Color(0, 0, 0, 1.0f));
+
+            // string to send
+            string toSend = "mSeqPosition1 " + Math.Floor(Cntr1).ToString() + '\n';
+            byte[] mState = Encoding.ASCII.GetBytes(toSend);
+            mServ.Send(mState, mState.Length, ep);
 
             spriteBatch.Begin();
             //Top stimulus

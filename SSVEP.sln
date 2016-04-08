@@ -9,7 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSVEPContent", "SSVEP\SSVEP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSeq", "MSeq\MSeq\MSeq.csproj", "{1E315BBA-89FA-45EB-9BE8-5D8C18A0FCDF}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "MSeqContent", "MSeq\MSeqContent\MSeqContent.contentproj", "{A5D6BD48-3CFF-4F4B-92F3-0C52E0D9D85F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSeqContent", "MSeq\MSeqContent\MSeqContent.contentproj", "{A5D6BD48-3CFF-4F4B-92F3-0C52E0D9D85F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSeq1Box", "MSeq1Box\MSeq1Box\MSeq1Box.csproj", "{AFE6CC22-6555-4B01-BC98-5CEE6B861D4A}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "MSeq1BoxContent", "MSeq1Box\MSeq1BoxContent\MSeq1BoxContent.contentproj", "{1F61CA1F-BB74-4669-B435-19EBC5D69CD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +33,12 @@ Global
 		{1E315BBA-89FA-45EB-9BE8-5D8C18A0FCDF}.Release|x86.Build.0 = Release|x86
 		{A5D6BD48-3CFF-4F4B-92F3-0C52E0D9D85F}.Debug|x86.ActiveCfg = Debug|x86
 		{A5D6BD48-3CFF-4F4B-92F3-0C52E0D9D85F}.Release|x86.ActiveCfg = Release|x86
+		{AFE6CC22-6555-4B01-BC98-5CEE6B861D4A}.Debug|x86.ActiveCfg = Debug|x86
+		{AFE6CC22-6555-4B01-BC98-5CEE6B861D4A}.Debug|x86.Build.0 = Debug|x86
+		{AFE6CC22-6555-4B01-BC98-5CEE6B861D4A}.Release|x86.ActiveCfg = Release|x86
+		{AFE6CC22-6555-4B01-BC98-5CEE6B861D4A}.Release|x86.Build.0 = Release|x86
+		{1F61CA1F-BB74-4669-B435-19EBC5D69CD5}.Debug|x86.ActiveCfg = Debug|x86
+		{1F61CA1F-BB74-4669-B435-19EBC5D69CD5}.Release|x86.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
